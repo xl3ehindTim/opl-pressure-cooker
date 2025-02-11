@@ -148,7 +148,7 @@ class TeamBuilder:
 
 def main():
     # Read Pokemon data
-    pokemon_df = pd.read_csv('pokemon.csv')
+    pokemon_df = pd.read_csv('../pokemon.csv')
     
     # Create team builder
     builder = TeamBuilder(pokemon_df)
