@@ -1,0 +1,133 @@
+.pokedex-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pokedex-body {
+    background-color: #dc0a2d;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.pokedex-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pokedex-light-big {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(#7bb1db, #2e6da4);
+    border: 5px solid white;
+    margin-right: 20px;
+}
+
+.pokedex-lights-small {
+    display: flex;
+    gap: 10px;
+}
+
+.pokedex-light-small {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.pokedex-light-small.red { background-color: #ff4136; }
+.pokedex-light-small.yellow { background-color: #ffdc00; }
+.pokedex-light-small.green { background-color: #2ecc40; }
+
+.pokedex-screen {
+    background-color: #232323;
+    border-radius: 10px;
+    padding: 20px;
+    border: 20px solid #1a1a1a;
+}
+
+.gen-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #2c3e50;
+    color: #95a5a6;
+}
+
+.gen-button.active {
+    background-color: #2ecc71;
+    color: white;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+.pokemon-grid-item:hover {
+    transform: scale(1.05);
+    background-color: #34495e !important;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+}
+
+/* Custom scrollbar for the grid */
+#pokemon-grid > div::-webkit-scrollbar {
+    width: 10px;
+}
+
+#pokemon-grid > div::-webkit-scrollbar-track {
+    background: #2c3e50;
+    border-radius: 5px;
+}
+
+#pokemon-grid > div::-webkit-scrollbar-thumb {
+    background: #ee1515;
+    border-radius: 5px;
+}
+
+#pokemon-grid > div::-webkit-scrollbar-thumb:hover {
+    background: #cc1414;
+}
+
+.nav-button {
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-button.return {
+    background-color: #e74c3c;
+}
+
+.nav-button.return:hover {
+    background-color: #c0392b;
+}
+
+.nav-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-button.prev {
+    padding-left: 30px;
+}
+
+.nav-button.next {
+    padding-right: 30px;
+} 
